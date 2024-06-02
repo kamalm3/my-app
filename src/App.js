@@ -7,6 +7,7 @@ import LendPageselected from './Lendpageselected.js';
 import BorrowPageselected from './Borrowpageselected.js';
 import HomePage from './Homepage.js';
 import DepositPage from './Depositpage.js';
+import KYCForm from './kyc.js'
 import Web3 from 'web3';
 import './App.css';
 
@@ -48,6 +49,7 @@ function App() {
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/lend">Lend</Nav.Link>
             <Nav.Link as={Link} to="/borrow">Borrow</Nav.Link>
+            <Nav.Link as={Link} to="/kyc">Verify</Nav.Link>
             <Nav.Link onClick={connectToMetamask}>
               {isConnected ? 'Connected!' : 'Connect Wallet'}
             </Nav.Link>
@@ -59,7 +61,8 @@ function App() {
           <Route path="/lendselected" element={<LendPageselected />} />
           <Route path="/borrowselected" element={<BorrowPageselected />} />
           <Route path="/borrow" element={<BorrowPage />} />
-          <Route path="/deposit" element={<DepositPage />} /> 
+          <Route path="/deposit" element={<DepositPage />} />
+          <Route path="/kyc" element={<KYCForm />} /> 
           {/* Define other routes here if needed */}
         </Routes>
       </Router>

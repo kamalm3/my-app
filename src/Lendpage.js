@@ -8,9 +8,9 @@ const LendPage = ({ handleClick }) => {
       <h2>Pick your vault you want to lend to</h2>
       {/* Add your lending content here */}
         <div>
-        <button  className="button-lend" onClick={() => navigate('/borrowselected')}>6 month vault</button>
-          <button  className="button-lend" onClick={() => navigate('/borrowselected')}>12 month vault</button>
-          <button  className="button-lend" onClick={() => navigate('/borrowselected')}>24 month vault</button>
+          <button  className="button-lend" onClick={() => navigate('/lendselected')}>6 month vault</button>
+          <button  className="button-lend" onClick={() => navigate('/lendselected')}>12 month vault</button>
+          <button  className="button-lend" onClick={() => navigate('/lendselected')}>24 month vault</button>
         </div>
   </header>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const BorrowPageselected = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ const BorrowPageselected = () => {
     termsConfirmation: false,
     termsText: ''
   });
+
+  const { duration } = useParams();
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -25,6 +28,7 @@ const BorrowPageselected = () => {
 
   return (
     <div>
+      <h2>{duration} vault selected</h2>
       <p>
         Select amount to borrow from Vault: <input type="text" name="amount" value={formData.amount} onChange={handleChange} />
       </p>
