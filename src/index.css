@@ -54,6 +54,28 @@ body {
   align-items: center; /* Center the buttons horizontally */
   margin-top: 1px; /* Add some space above the buttons */
 }
+/* Add spacing between each form row */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+/* Style for label elements */
+label {
+  flex: 1;
+  margin-right: 50px; /* Adjust the value as needed */
+}
+
+/* Style for input, select, and file input elements */
+input[type="text"],
+input[type="email"],
+select,
+input[type="file"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 50%;
+}
 
 button {
   margin: 30px;

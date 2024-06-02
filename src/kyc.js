@@ -42,27 +42,27 @@ const KYCForm = () => {
     <div>
       <h2>KYC Form</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div style={{ marginBottom: '20px' }}>
           <label>First Name:</label>
           <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} required />
         </div>
-        <div>
+        <div style={{ marginBottom: '20px' }}>
           <label>Last Name:</label>
           <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} required />
         </div>
-        <div>
+        <div style={{ marginBottom: '20px' }}>
           <label>Email:</label>
           <input type="email" name="email" value={formData.email} onChange={handleChange} required />
         </div>
-        <div>
+        <div style={{ marginBottom: '20px' }}>
           <label>Address:</label>
           <input type="text" name="address" value={formData.address} onChange={handleChange} required />
         </div>
-        <div>
+        <div style={{ marginBottom: '20px' }}>
           <label>Country:</label>
           <input type="text" name="country" value={formData.country} onChange={handleChange} required />
         </div>
-        <div>
+        <div style={{ marginBottom: '20px' }}>
           <label>Identity Type:</label>
           <select name="identityType" value={formData.identityType} onChange={handleChange} required>
             <option value="">Select</option>
@@ -71,11 +71,11 @@ const KYCForm = () => {
             <option value="nationalID">National ID</option>
           </select>
         </div>
-        <div>
+        <div style={{ marginBottom: '20px' }}>
           <label>Identity Number:</label>
           <input type="text" name="identityNumber" value={formData.identityNumber} onChange={handleChange} required />
         </div>
-        <div>
+        <div style={{ marginBottom: '20px' }}>
           <label>Upload Identification Document:</label>
           <input type="file" accept=".pdf,.doc,.docx,.png,.jpg" onChange={handleFileChange} />
         </div>
